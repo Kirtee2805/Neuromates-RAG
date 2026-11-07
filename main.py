@@ -1,56 +1,47 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
-from hybrid_search import (
-    create_bm25_retriever,
-    hybrid_search
-)
-
+from hybrid_search import create_bm25_retriever,hybrid_search
 from answer_generator import generate_answer
 
+app = FastAPI()
 
-def main():
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-    print("=" * 60)
-    print("NEURO MATES RAG SYSTEM")
-    print("=" * 60)
+bm25_retriever = create_bm25_retriever()
+print("Neuro Mates RAG System Ready on Render!")
 
-    # 1. Build BM25 index
-    bm25_retriever = create_bm25_retriever()
+class ChatRequest(BaseModel):
+    question: str
 
-    print("\nBM25 index created!")
-    print("Neuro Mates RAG is ready!")
-
-    # 2. Get user question
-    question = input("\nAsk Neuro Mates something: ").strip()
+@app.post("/chat")
+def ask_neuro_mates(payload: ChatRequest):
+    question = payload.question.strip()
 
     if not question:
-        print("Please enter a question.")
-        return
+        return {"error": "Please enter a question."}
 
-    # 3. Retrieve relevant chunks
-    retrieved_chunks = hybrid_search(
-        question,
-        bm25_retriever
-    )
+   
+    retrieved_chunks = hybrid_search(question, bm25_retriever)
 
     if not retrieved_chunks:
-        print("\nNo relevant information found.")
-        return
+        return {"reply": "No relevant information found.", "sources": []}
 
-    # 4. Generate final answer
-    print("\nGenerating answer using Gemini...")
+    answer = generate_answer(question, retrieved_chunks)
 
-    answer = generate_answer(
-        question,
-        retrieved_chunks
-    )
-
-    # 5. Display final response
-    print("\n" + "=" * 60)
-    print("NEURO MATES ANSWER")
-    print("=" * 60)
-
-    print(answer)
+   
+    return {
+        "reply": answer
+    }
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def home():
+    return {"status": "Neuro Mates RAG API is online and running!"}
