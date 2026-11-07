@@ -1,0 +1,24 @@
+
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+
+# Gemini integration
+langchain-google-genai
+
+# Vector database
+langchain-qdrant
+qdrant-client
+
+# BM25
+rank-bm25
+
+# Backend & UI
+fastapi
+uvicorn[standard]
+streamlit
+
+# Utilities
+python-dotenv
+numpy

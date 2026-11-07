@@ -1,0 +1,95 @@
+{
+  "question": "What sensor is used for Parkinson monitoring?",
+  "results": [
+    {
+      "id": "NM-007",
+      "content": "The Parkinson’s module is designed for movement-related monitoring and care support. Its wearable concept uses ESP32 and MPU6050 and is worn on the dorsal side (back side) of the hand. Software concepts include movement/orientation visualization, unusual-movement indicators, fall-event history, alerts, and rehabilitation activity support.",
+      "topic": "overview",
+      "score": 0.7706195502806477
+    },
+    {
+      "id": "NM-008",
+      "content": "The Parkinson’s wearable concept uses an ESP32 controller and MPU6050 accelerometer/gyroscope. It is worn on the dorsal side (back) of the hand with an adjustable strap. Fingers, thumb, palm, and wrist remain free. Do not describe it as a smartwatch, palm device, or forearm band.",
+      "topic": "hardware",
+      "score": 0.7391200741234287
+    },
+    {
+      "id": "NM-035",
+      "content": "Q: Where is the Parkinson’s wearable worn? A: On the dorsal side, or back side, of the hand. It uses an ESP32 and MPU6050 in the discussed concept.",
+      "topic": "faq_parkinsons",
+      "score": 0.7294869771690058
+    },
+    {
+      "id": "NM-010",
+      "content": "The Parkinson’s alert flow is movement monitoring, sensor-data analysis, a potentially concerning event, WhatsApp notification and/or siren, then continued monitoring and status confirmation where implemented. An alert is not a diagnosis and does not guarantee fall or tremor detection.",
+      "topic": "alerts",
+      "score": 0.718102549855651
+    },
+    {
+      "id": "NM-009",
+      "content": "The Parkinson’s software concept includes motion and orientation visualization, review of tremor or unusual-movement indicators, fall-event history, timestamps, and rehabilitation activity records. Discussed software direction: Django backend, SQLite, and HTML/CSS/JavaScript frontend. No verified accuracy figure is available.",
+      "topic": "software",
+      "score": 0.7086877363064034
+    },
+    {
+      "id": "NM-001",
+      "content": "Neuro Mates is an AI- and IoT-enabled smart-care project focused on Parkinson’s, Alzheimer’s, Epilepsy, and physiotherapy support for paralysis-related movement limitations and Parkinson’s. It combines sensor-based monitoring, software workflows, alerts, reminders, activity records, and interactive rehabilitation support.",
+      "topic": "project_overview",
+      "score": 0.6693087248078093
+    },
+    {
+      "id": "NM-016",
+      "content": "The Epilepsy module is designed around EEG-related signal monitoring, potentially abnormal activity awareness, caregiver notification, and event records. Hardware concept: ESP32 and BioAmp EXG Pill. Wearable concept: lightweight adjustable headband with the specified electrode reference point behind the ear, contacting skin.",
+      "topic": "overview",
+      "score": 0.6545733890049616
+    },
+    {
+      "id": "NM-020",
+      "content": "The physiotherapy module supports interactive rehabilitation exercises for face, hand/fingers, and legs for paralysis-related movement limitations and Parkinson’s. It combines biomedical electrical-signal sensing with game-based exercise interactions and activity records. It does not replace a physiotherapist.",
+      "topic": "overview",
+      "score": 0.6461585990579033
+    },
+    {
+      "id": "NM-011",
+      "content": "The Alzheimer’s module is designed to support location awareness, activity logging, memory-recall prompts, and routine reminders. Its wearable concept uses ESP32 and NEO-6M GPS and is worn on the outer upper arm, slightly below the shoulder.",
+      "topic": "overview",
+      "score": 0.6418785354531931
+    },
+    {
+      "id": "NM-036",
+      "content": "Q: Where is the Alzheimer’s wearable worn? A: On the outer upper arm, slightly below the shoulder. It uses an ESP32 and NEO-6M GPS in the discussed concept.",
+      "topic": "faq_alzheimers",
+      "score": 0.6307613845646531
+    },
+    {
+      "id": "NM-006",
+      "content": "Discussed technologies include Python, Django, FastAPI, HTML, CSS, JavaScript, SQLite, ESP32, Arduino UNO R4 Minima, MPU6050, NEO-6M GPS, BioAmp EXG Pill, Muscle BioAmp Shield, WhatsApp notifications, AI/ML, and signal processing. This list does not prove every component is integrated or production deployed.",
+      "topic": "technology_stack",
+      "score": 0.6283722103480476
+    },
+    {
+      "id": "NM-031",
+      "content": "Q: What is Neuro Mates? A: An AI- and IoT-enabled smart-care project designed to support Parkinson’s, Alzheimer’s, Epilepsy, and paralysis-focused rehabilitation through monitoring, alerts, reminders, records, and interactive exercise support.",
+      "topic": "faq_general",
+      "score": 0.6272751536055344
+    },
+    {
+      "id": "NM-017",
+      "content": "The Epilepsy wearable concept combines ESP32 and BioAmp EXG Pill for EEG-related electrical signal acquisition. It uses a lightweight adjustable headband. The specified electrode reference point is behind the ear and should contact skin. Do not obstruct eyes or hearing or invent additional electrode positions.",
+      "topic": "hardware",
+      "score": 0.6268457662426966
+    },
+    {
+      "id": "NM-012",
+      "content": "The Alzheimer’s wearable concept uses ESP32 and NEO-6M GPS. Intended placement is the outer side of the upper arm, slightly below the shoulder, using an adjustable breathable band. Do not place it on the top of the shoulder, neck, wrist, waist, or chest.",
+      "topic": "hardware",
+      "score": 0.6262920454999527
+    },
+    {
+      "id": "NM-021",
+      "content": "The physiotherapy concept uses Arduino UNO R4 Minima and/or ESP32, BioAmp EXG Pill, and Muscle BioAmp Shield. Biomedical electrodes are attached to appropriate muscle areas for the selected exercise, with wires connected to sensing modules and controller. Electrode placement must follow the actual hardware configuration and qualified guidance.",
+      "topic": "hardware",
+      "score": 0.6251477850947329
+    }
+  ]
+}

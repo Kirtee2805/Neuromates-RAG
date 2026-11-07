@@ -1,0 +1,77 @@
+[
+  {
+    "id": "NM-007",
+    "topic": "overview",
+    "content": "The Parkinson’s module is designed for movement-related monitoring and care support. Its wearable concept uses ESP32 and MPU6050 and is worn on the dorsal side (back side) of the hand. Software concepts include movement/orientation visualization, unusual-movement indicators, fall-event history, alerts, and rehabilitation activity support."
+  },
+  {
+    "id": "NM-009",
+    "topic": "software",
+    "content": "The Parkinson’s software concept includes motion and orientation visualization, review of tremor or unusual-movement indicators, fall-event history, timestamps, and rehabilitation activity records. Discussed software direction: Django backend, SQLite, and HTML/CSS/JavaScript frontend. No verified accuracy figure is available."
+  },
+  {
+    "id": "NM-001",
+    "topic": "project_overview",
+    "content": "Neuro Mates is an AI- and IoT-enabled smart-care project focused on Parkinson’s, Alzheimer’s, Epilepsy, and physiotherapy support for paralysis-related movement limitations and Parkinson’s. It combines sensor-based monitoring, software workflows, alerts, reminders, activity records, and interactive rehabilitation support."
+  },
+  {
+    "id": "NM-008",
+    "topic": "hardware",
+    "content": "The Parkinson’s wearable concept uses an ESP32 controller and MPU6050 accelerometer/gyroscope. It is worn on the dorsal side (back) of the hand with an adjustable strap. Fingers, thumb, palm, and wrist remain free. Do not describe it as a smartwatch, palm device, or forearm band."
+  },
+  {
+    "id": "NM-010",
+    "topic": "alerts",
+    "content": "The Parkinson’s alert flow is movement monitoring, sensor-data analysis, a potentially concerning event, WhatsApp notification and/or siren, then continued monitoring and status confirmation where implemented. An alert is not a diagnosis and does not guarantee fall or tremor detection."
+  },
+  {
+    "id": "NM-032",
+    "topic": "faq_conditions",
+    "content": "Q: Which conditions does Neuro Mates focus on? A: Parkinson’s, Alzheimer’s, Epilepsy, and physiotherapy support for paralysis-related movement limitations and Parkinson’s. This does not mean the system treats or cures these conditions."
+  },
+  {
+    "id": "NM-031",
+    "topic": "faq_general",
+    "content": "Q: What is Neuro Mates? A: An AI- and IoT-enabled smart-care project designed to support Parkinson’s, Alzheimer’s, Epilepsy, and paralysis-focused rehabilitation through monitoring, alerts, reminders, records, and interactive exercise support."
+  },
+  {
+    "id": "NM-035",
+    "topic": "faq_parkinsons",
+    "content": "Q: Where is the Parkinson’s wearable worn? A: On the dorsal side, or back side, of the hand. It uses an ESP32 and MPU6050 in the discussed concept."
+  },
+  {
+    "id": "NM-003",
+    "topic": "problem_context",
+    "content": "Neurological conditions and mobility limitations can create ongoing care needs beyond clinic visits. Patients and families may need support with routine monitoring, unusual-event awareness, location safety, reminders, activity records, and communication. Neuro Mates is designed to support selected parts of these everyday workflows."
+  },
+  {
+    "id": "NM-020",
+    "topic": "overview",
+    "content": "The physiotherapy module supports interactive rehabilitation exercises for face, hand/fingers, and legs for paralysis-related movement limitations and Parkinson’s. It combines biomedical electrical-signal sensing with game-based exercise interactions and activity records. It does not replace a physiotherapist."
+  },
+  {
+    "id": "NM-025",
+    "topic": "caretaker",
+    "content": "The Caretaker portal is intended for authorized family members or caregivers to receive relevant notifications and follow available patient updates, such as location alerts, movement or EEG-related alerts, reminders, and activity records depending on the module."
+  },
+  {
+    "id": "NM-005",
+    "topic": "shared_workflow",
+    "content": "A typical workflow is: a wearable or sensor collects a signal; a controller forwards data to software; software processes, visualizes, or records it; relevant alerts or reminders are presented to the patient or authorized caregiver; and authorized users review available records. Exact steps differ by module."
+  },
+  {
+    "id": "NM-029",
+    "topic": "medical_scope",
+    "content": "Neuro Mates is a care-support and monitoring project, not a diagnostic or treatment replacement. Do not provide definitive diagnosis, promise prevention, guarantee seizure/fall detection, recommend medication changes, or tell users to ignore urgent symptoms. Direct medical questions to qualified professionals and urgent situations to local emergency services."
+  },
+  {
+    "id": "NM-042",
+    "topic": "faq_replacement",
+    "content": "Q: Can Neuro Mates replace a doctor or physiotherapist? A: No. Diagnosis, treatment decisions, and rehabilitation planning remain with qualified professionals."
+  },
+  {
+    "id": "NM-016",
+    "topic": "overview",
+    "content": "The Epilepsy module is designed around EEG-related signal monitoring, potentially abnormal activity awareness, caregiver notification, and event records. Hardware concept: ESP32 and BioAmp EXG Pill. Wearable concept: lightweight adjustable headband with the specified electrode reference point behind the ear, contacting skin."
+  }
+]
