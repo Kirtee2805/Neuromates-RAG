@@ -94,8 +94,7 @@ ANSWER STYLE:
 2. Answer the exact question.
 3. Use bullet points when helpful.
 4. Avoid unnecessary technical details.
-5. Mention source chunk IDs at the end.
-6. Clearly distinguish implemented features from planned concepts.
+5. Clearly distinguish implemented features from planned concepts.
 
 USER QUESTION:
 {json.dumps(question)}
