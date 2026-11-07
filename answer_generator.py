@@ -95,6 +95,7 @@ ANSWER STYLE:
 3. Use bullet points when helpful.
 4. Avoid unnecessary technical details.
 5. Clearly distinguish implemented features from planned concepts.
+6. CRITICAL: Completely hide and remove all internal citation tags (e.g., "[NM-016]", "[NM-017]", etc.) and do not include any "Sources:" metadata sections in the final output text. Keep the presentation completely clean for the end user
 
 USER QUESTION:
 {json.dumps(question)}
@@ -146,41 +147,3 @@ Generate the answer now.
 # 3. Local fallback test (NO API REQUEST)
 # -----------------------------------------
 
-if __name__ == "__main__":
-
-    test_chunks = [
-        {
-            "id": "NM-007",
-            "topic": "overview",
-            "content": (
-                "The Parkinson's module uses ESP32 and MPU6050 "
-                "for movement and orientation monitoring."
-            )
-        },
-        {
-            "id": "NM-008",
-            "topic": "hardware",
-            "content": (
-                "The wearable is worn on the dorsal side "
-                "of the hand."
-            )
-        }
-    ]
-
-    print("\nTESTING FALLBACK OUTPUT")
-
-    fallback = [
-        "Gemini is temporarily unavailable.",
-        "Retrieval completed successfully.",
-        "\nRelevant knowledge-base information:"
-    ]
-
-    for chunk in test_chunks:
-
-        fallback.append(
-            f"\n[{chunk['id']}] "
-            f"{chunk['topic']}\n"
-            f"{chunk['content']}"
-        )
-
-    print("\n".join(fallback))
